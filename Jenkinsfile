@@ -5,6 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'php --version'
+                sh 'php artisan serve'
             }
         }
     }
